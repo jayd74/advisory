@@ -1,6 +1,9 @@
 header {
   widows: 100%; }
 
+footer {
+  background: black; }
+
 body {
   background: #ffffff; }
 
