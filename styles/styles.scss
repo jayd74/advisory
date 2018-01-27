@@ -1,11 +1,16 @@
+@import "components/normalize";
+@import "components/reset";
 @import "components/header";
+@import "components/variables";
 @import "components/footer";
 
 body {
-    background: #ffffff;;
+    background: #ffffff;
 }
-
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
 }
+.top-nav {
+    background: $secondary;
+}   
