@@ -1,9 +1,95 @@
-$mainHeadingFont: "Playfair Display", serif;
+$mainHeadingFont: "Source Sans Pro", serif;
+$primary: #3086fd;
+$secondary: #f5f3f4;
 
+header {
+    font-family: $mainHeadingFont;
+}
+.top-nav {
+    background: $secondary;
+    @include fontSize(16px);
+    padding: 20px;
+    border:0;
+    a:hover{
+        border-bottom: solid thin $primary;
+        transition: 0.5s;
+    }
+}   
+.top-nav .wrapper {
+    @include flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+    .top-nav-info {
+    @include flexbox;
+    width: 50%;
+    justify-content: space-around;
+    img {
+    vertical-align: middle;
+        }    
+    }      
+}
 
+.top-nav .wrapper ul{
+    @include flexbox;
+    width: 100%;
+    justify-content: flex-end;
+    li {
+    padding: 5px;
+    margin: 0 10px;
+    i {
+        color: #3086fd;
+        margin: 0 10px;
+    }
+    li:first-child::after{
+    content: "";
+    display: inline-block;
+    background: url("../images/down-caret.png") no-repeat;
+    width:10px;
+    height:6px;
+    left: 5px;
+    }
+}
+}
+// end top-nav
 
-//make partial
-//save partial
-//delete the partial
-//import the partial
-//save style.scss
+.banner {
+    @include flexbox;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.logo {
+    width: 40%;     
+    display: inline-block;
+    img{
+    vertical-align: top;
+    }
+}
+.banner-info {
+        display: inline-block; 
+    }
+.office-info{
+    @include flexbox;
+    width: 60%;
+    justify-content: space-around;
+    .office-info-item img {
+            vertical-align: top;
+        }
+    }
+h4 {
+    @include logo-h4;
+    color: #272626;
+    span {
+        color: #3086fd;
+    }
+}
+.banner-p {
+    @include fontSize(18px);
+    padding: 10px 0;
+    color: rgba(39,39,39,0.7);
+}
+.free-consult {
+    border: solid 2px $primary;
+    padding: 25px;
+    color: $primary;
+    text-transform: uppercase;
+}

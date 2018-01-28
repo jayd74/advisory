@@ -1,0 +1,18 @@
+@import "components/variables";
+
+@mixin fontSize ($sizeValue) {
+    font-size: $sizeValue;
+    color: rgba (0,0,0,0.7);
+    font-weight: 400px;
+}
+
+@mixin flexbox {
+    display: flex;
+}
+
+@mixin logo-h4 {
+    font-family: $secondaryHeadingFont;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}

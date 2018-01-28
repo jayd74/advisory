@@ -150,7 +150,9 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -175,6 +177,115 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+header {
+  font-family: "Source Sans Pro", serif; }
+
+.top-nav {
+  background: #f5f3f4;
+  font-size: 16px;
+  color: rgba 0, 0, 0, 0.7;
+  font-weight: 400px;
+  padding: 20px;
+  border: 0; }
+  .top-nav a:hover {
+    border-bottom: solid thin #3086fd;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
+.top-nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .top-nav .wrapper .top-nav-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .top-nav .wrapper .top-nav-info img {
+      vertical-align: middle; }
+
+.top-nav .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .top-nav .wrapper ul li {
+    padding: 5px;
+    margin: 0 10px; }
+    .top-nav .wrapper ul li i {
+      color: #3086fd;
+      margin: 0 10px; }
+    .top-nav .wrapper ul li li:first-child::after {
+      content: "";
+      display: inline-block;
+      background: url("../images/down-caret.png") no-repeat;
+      width: 10px;
+      height: 6px;
+      left: 5px; }
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 40px 0; }
+
+.logo {
+  width: 40%;
+  display: inline-block; }
+  .logo img {
+    vertical-align: top; }
+
+.banner-info {
+  display: inline-block; }
+
+.office-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .office-info .office-info-item img {
+    vertical-align: top; }
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: #272626; }
+  h4 span {
+    color: #3086fd; }
+
+.banner-p {
+  font-size: 18px;
+  color: rgba 0, 0, 0, 0.7;
+  font-weight: 400px;
+  padding: 10px 0;
+  color: rgba(39, 39, 39, 0.7); }
+
+.free-consult {
+  border: solid 2px #3086fd;
+  padding: 25px;
+  color: #3086fd;
+  text-transform: uppercase; }
+
 footer {
   background: black; }
 
@@ -185,5 +296,7 @@ body {
   max-width: 1170px;
   margin: 0 auto; }
 
-.top-nav {
-  background: #f5f3f4; }
+p {
+  font-size: 16px;
+  color: "Sources Sans Pro", serif;
+  font-weight: 400px; }
