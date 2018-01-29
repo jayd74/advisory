@@ -14,18 +14,34 @@ body {
     max-width: 1170px;
     margin: 0 auto;
 }
+
+
 h1 {
+    @include serifHeading (71px);
     color: #fff;
-    font-size: 71px;
-    font-weight: 700;
-    font-family: $secondaryHeadingFont;
+    
+}
+h2 {
+    @include serifHeading (50px);
+    color: $primary;
+    text-align:center;
+}
+h3 {
+    @include serifHeading (45px);
+    line-height: 58px;
+    
 }
 h4 {
-    @include logo-h4;
+    @include serifHeading (32px);
     color: #272626;
     span {
         color: #3086fd;
     }
+}
+h5 {
+    @include serifHeading (20px);
+    color: $primary;
+    margin: 40px 0;
 }
 p {
     @include fontSize(16);
@@ -53,6 +69,149 @@ p {
             background: $primary;
             padding: 15px;
             margin: 10% 0;
+            i {
+                margin: 0 10px;
+            }
+        }
+        button:hover {
+            @include blue-box-hover;
         }
     }
+.nav-arrow-wrapper{
+    width: 100%;
+    @include flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 400px;
+    transition: 0.5s;
+    a:hover {
+        background: $primary;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+}
+.nav-arrow {
+    color: #fff;
+    background: rgba(162, 200, 252, 0.32);
+    font-size: 32px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    vertical-align: bottom;
+    padding-top: 15px;
+    text-align: center; 
+  
+}
+
+.collab {
+    background: url('../images/ellipse-left.png') no-repeat;
+    margin: 100px 0;
+}
+.collab .wrapper {
+    @include flexbox;
+    justify-content: space-around;
+}
+.article-info {
+    width: 60%;
+    p {
+        line-height: 36px;
+        margin: 60px 0;        
+    }
+    button {
+        @include blue-box;
+        i {
+            margin-right: 10px;
+            padding: 10px;
+        }
+    }
+    button:hover {
+        @include blue-box-hover;
+    }
+}
+.collab-offer {
+    width: 30%;
+    background: $secondary;
+    padding: 30px;
+    border-right: solid thin $primary;
+    .offer-heading {
+        @include serifHeading (18px);
+    }
+    button:hover {
+            transform: translateX(20px);
+            transition: 0.5s
+        }
+    p {
+        line-height: 32px;
+        letter-spacing: 0.4px;
+        margin: 30px;
+    }
+    button {
+        background: none;
+        border: none;
+        padding: 0 30px;
+        color: $primary;
+        transition: 0.5s;
+        i {
+            margin-right: 10px;
+        }  
+    } 
+}
+.our-services {
+    background: $secondary;
+    padding: 100px;
+    h5 {
+        color: $tertiary;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    h2::after {
+        content: "";
+        height: 2px;
+        width: 80px;
+        background: $primary;
+        display: block;
+        margin: 45px auto;
+    }
+    .wrapper {
+        @include flexbox;
+        min-height: 500px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .service-type {
+            width: 30%;
+            background: #fff;
+            text-align: center;
+            padding: 50px;
+            margin: 2% 0;
+            h5{
+                font-family: $baseFont;
+                margin-top: 30px;
+            }
+            img {
+                margin: 25px;
+                height: 50px;
+            }
+            p {
+                line-height: 34px;
+            }
+        }
+    }
+}
+.section-heading h5,
+.section-heading h2{
+    z-index: 2;
+    position: relative;
+}
+
+.section-heading p{
+    @include serifHeading(275px);
+    color: #fff;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    bottom: 120px;
+    line-height: 0;
+}
 
