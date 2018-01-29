@@ -200,24 +200,18 @@ p {
         }
     }
 }
+
+section {
+    padding: 150px 0;
+}
+
 .section-heading h5,
 .section-heading h2{
     z-index: 2;
     position: relative;
-}
-
-.section-heading p{
-    @include serifHeading(275px);
-    color: #fff;
-    position: relative;
     text-align: center;
-    z-index: 0;
-    bottom: 120px;
-    line-height: 0;
 }
-//end our services
-.why-choose-advisory {
-    h3::after{
+.section-heading h3::after{
       content: "";
         height: 2px;
         width: 80px;
@@ -225,7 +219,202 @@ p {
         display: block;
         margin: 45px 0;
     }
-    p {
+.section-heading p{
+    @include serifHeading(275px);
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    line-height: 0;
+}
+//end our services
+.white-cap {
+    color: #fff;
+    bottom: 120px;
+}
+.why-choose-advisory {
+    .article-info-wrapper,
+    .advisory-blocks {
+        @include flexbox;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+    .article-info {
+        width:55%;
+    }
+    .sub-advisory {
         font-family: $baseFont;
+        font-size: 18px;
+        font-weight: 500;
+        color: $primary;
+        margin: 0;
+    }
+    img {
+        vertical-align: top;
+    }
+    .advisory-block-items {
+        width: 30%;
+        padding: 20px;
+        border: solid 1px #f2f2f2;
+        img {
+            vertical-align: middle;
+        }
+        h5 {
+            @include fontSize(18px);
+            font-family: $baseFont;
+            color: $tertiary;
+            display: inline;
+            margin-left: 25px;
+        }
+        p {
+            line-height: 36px;
+            margin-top: 30px;
+            padding: 10px;
+        }
+    }
+}
+.advisory-blocks {
+    padding: 70px 0;
+}
+.advisory-block-items:hover {
+    border-left: solid 1px $primary;
+    h5{
+        color: $primary;
+        transition: 0.5s;
+    }
+}
+.stat-line {
+    background: #1f2329;
+    @include flexbox;
+    justify-content: space-around;
+    .stat-item {
+        border-right: 1px solid #313f51;
+        width: 100%;
+        padding: 70px;   
+    }
+    .stat-item:last-child {
+            border: none;
+        }
+    h5 {
+        font-family: $baseFont;
+        color: #fff;
+        font-weight: 400;
+    }
+    p{
+        @include fontSize(44px);
+        font-weight: 700;
+        color: $primary;
+        font-family: $tertiaryHeadingFont;
+        width: 100%;
+    }
+}
+.latest-news h5,
+.latest-project h5 {
+        color: $tertiary;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+.grey-cap {
+    color: #f6f3f3;
+    bottom: 30px;
+}
+.section-info {
+    @include fontSize (20px);
+    @include flexbox;
+    margin: 80px 0;
+    justify-content: space-between;
+    width: 100%;
+    p {
+        width: 70%;
+    }
+    button {
+        background: none;
+        border: none;
+        padding: 0 30px;
+        color: $primary;
+        transition: 0.5s;
+        i {
+            margin-right: 10px;
+        }  
+    } 
+    button:hover {
+            transform: translateX(20px);
+            transition: 0.5s
+        }
+}
+.section-items img{
+    margin: 10px;
+    width: calc((100%/3) - 25px);
+}
+
+.staff-section {
+    background: $primary;
+    .wrapper {
+        @include flexbox;
+    }
+    img {
+    width:100%;        
+    }
+    .staff-section-info {
+        @include fontSize (21px);
+        color: #fff;
+        width: 60%;
+        text-align: center;
+        font-weight: 500;
+        p {
+            margin: 0 50px;
+            line-height: 38px;
+        }
+        p:first-child::after {
+            content: "";
+            height: 2px;
+            width: 80px;
+            background: #fff;
+            display: block;
+            margin: 50px auto;
+        }
+    }
+    .staff-name {
+        font-size: 22px;
+    }
+    .staff-title {
+        @include fontSize (16px);
+        margin-top: 10px;
+    }
+}
+.tictac-wrapper{
+    @include flexbox;
+    justify-content: space-around;
+    width: 100px;
+    margin: 50px auto;
+.tictac {
+    background: #347ad8;
+    width: 26px;
+    height: 14px;
+    border-radius: 35%;
+    display: block;
+    }
+    :hover {
+        background: #fff;
+        transition: 0.5s;
+    }
+}
+.news-item-wrapper {
+    @include flexbox;
+    justify-content: space-around;
+    .news-items {
+        margin: 20px;
+        width: calc((100%/3) - 25px);
+    }
+    h5 {
+        font-family: $baseFont;
+        text-align: left;
+        color: $primary;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    p{
+        line-height: 30px;
+        color: $tertiary;
     }
 }
