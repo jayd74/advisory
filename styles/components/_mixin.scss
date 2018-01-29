@@ -16,3 +16,11 @@
     font-weight: 700;
     padding-bottom: 10px;
 }
+
+@mixin blue-box {
+    @include fontSize(18px);
+    background: $primary;
+    color: #fff;
+    letter-spacing: 0.45;
+    border: none;
+}

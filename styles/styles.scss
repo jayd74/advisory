@@ -8,15 +8,51 @@
 
 body {
     background: #ffffff;
+    font-family: $baseFont;
 }
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
 }
+h1 {
+    color: #fff;
+    font-size: 71px;
+    font-weight: 700;
+    font-family: $secondaryHeadingFont;
+}
+h4 {
+    @include logo-h4;
+    color: #272626;
+    span {
+        color: #3086fd;
+    }
+}
 p {
-    font-size: 16px;
-    color: $baseFont;
-    font-weight: 400px;
+    @include fontSize(16);
 }
 
+.hero-banner {
+    background: 
+        linear-gradient(rgba(1, 22, 50, 0.45)),
+        url("../images/advisory_banner.jpg");
+        background-size: cover;
+        width: 100%;
+        h1 {
+            width: 70%;
+            padding: 15% 0 5% 0;
+        }
+        .wrapper p {
+            @extend p;
+            color: #fff;
+            line-height: 32px;
+            width: 75%;
+            letter-spacing: 0.45px;
+        }
+        button {
+            @include blue-box;
+            background: $primary;
+            padding: 15px;
+            margin: 10% 0;
+        }
+    }
 
