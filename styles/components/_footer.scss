@@ -2,3 +2,24 @@ footer {
    background: black;
 }
 
+.footer-contact-info {
+    background: linear-gradient(180deg, $primary 50%, #000 50%);
+    position: relative;
+    z-index: 1;
+    .footer-contact-item {
+        background: #313030;
+        justify-content: space-around;
+        box-shadow: 0px 50px 0px -20px #424141;
+        @include flexbox;
+        .contact-item {
+            @include flexbox;
+            padding: 20px;
+            p {
+                color: #fff;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+
