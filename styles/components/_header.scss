@@ -5,7 +5,6 @@ $secondary: #f5f3f4;
 header {
     font-family: $mainHeadingFont;
 }
-
 .top-nav {
     background: $secondary;
     @include fontSize(16px);
@@ -28,12 +27,12 @@ header {
         img {
            vertical-align: middle;
         }    
-    }      
-}
-.top-nav .wrapper ul{
+    }  
+    ul{
     @include flexbox;
     width: 100%;
     justify-content: flex-end;
+    }
     li {
     padding: 5px;
     margin: 0 10px;
@@ -42,19 +41,15 @@ header {
         margin: 0 10px;
         }
     }
-    li:first-child::after{
-    content: "";
-    display: inline-block;
-    background: url("../images/down-caret.png") no-repeat;
-    width:10px;
-    height:6px;
-    }
     li:last-child {
         margin-right: 0;
     }
+    select {
+        border-style: none;
+        background: $secondary;
+    }    
 }
 // end top-nav
-
 .banner {
     @include flexbox;
     justify-content: space-between;
@@ -71,6 +66,11 @@ header {
         display: inline-block; 
         margin-left:25px;
     }
+.banner-p {
+    @include fontSize(18px);
+    padding: 10px 0;
+    color: $tertiary;
+}
 .office-info{
     @include flexbox;
     width: 70%;
@@ -79,19 +79,12 @@ header {
             vertical-align: top;
         }
     }
-
-.banner-p {
-    @include fontSize(18px);
-    padding: 10px 0;
-    color: $tertiary;
-}
 .free-consult p{
     border: solid 2px $primary;
     padding: 20px;
     color: $primary;
     text-transform: uppercase;
 }
-
 // end banner 
 .main-nav {
     @include blue-box;
@@ -110,7 +103,6 @@ header {
         @include blue-box-hover;
     }
 }
-
 .main-nav-icons{
     vertical-align: middle;
     li:first-child::after {
@@ -127,4 +119,3 @@ header {
     }
 }
 // end main-nav
-

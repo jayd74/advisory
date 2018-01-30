@@ -14,12 +14,9 @@ body {
     max-width: 1170px;
     margin: 0 auto;
 }
-
-
 h1 {
     @include serifHeading (71px);
-    color: #fff;
-    
+    color: #fff;  
 }
 h2 {
     @include serifHeading (50px);
@@ -28,8 +25,7 @@ h2 {
 }
 h3 {
     @include serifHeading (45px);
-    line-height: 58px;
-    
+    line-height: 58px;  
 }
 h4 {
     @include serifHeading (32px);
@@ -46,7 +42,6 @@ h5 {
 p {
     @include fontSize(16);
 }
-
 .hero-banner {
     background: 
         linear-gradient(rgba(1, 22, 50, 0.45)),
@@ -101,9 +96,7 @@ p {
     vertical-align: bottom;
     padding-top: 15px;
     text-align: center; 
-  
 }
-
 .collab {
     background: url('../images/ellipse-left.png') no-repeat;
     margin: 100px 0;
@@ -179,7 +172,6 @@ p {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        
         .service-type {
             width: 30%;
             background: #fff;
@@ -200,11 +192,9 @@ p {
         }
     }
 }
-
 section {
     padding: 100px 0;
 }
-
 .section-heading h5,
 .section-heading h2{
     z-index: 2;
@@ -238,6 +228,15 @@ section {
         justify-content: space-between;
         padding: 50px 0;
     }
+    h3::after {
+        content: "";
+        height: 2px;
+        width: 80px;
+        background: $primary;
+        display: block;
+        position: relative;
+        bottom: -20px;
+    }
     .article-info {
         width:55%;
     }
@@ -246,7 +245,7 @@ section {
         font-size: 18px;
         font-weight: 500;
         color: $primary;
-        margin: 0;
+        margin-top: 50px;
     }
     img {
         vertical-align: top;
@@ -313,7 +312,6 @@ section {
         text-align: center;
         margin-bottom: 15px;
     }
-
 .grey-cap {
     color: #f6f3f3;
     bottom: 30px;
@@ -346,7 +344,6 @@ section {
     margin: 10px;
     width: calc((100%/3) - 25px);
 }
-
 .staff-section {
     background: $primary;
     .wrapper {

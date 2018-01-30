@@ -217,29 +217,25 @@ header {
     text-transform: capitalize; }
     .top-nav .wrapper .top-nav-info img {
       vertical-align: middle; }
-
-.top-nav .wrapper ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
-  .top-nav .wrapper ul li {
+  .top-nav .wrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .top-nav .wrapper li {
     padding: 5px;
     margin: 0 10px; }
-    .top-nav .wrapper ul li i {
+    .top-nav .wrapper li i {
       color: #3086fd;
       margin: 0 10px; }
-  .top-nav .wrapper ul li:first-child::after {
-    content: "";
-    display: inline-block;
-    background: url("../images/down-caret.png") no-repeat;
-    width: 10px;
-    height: 6px; }
-  .top-nav .wrapper ul li:last-child {
+  .top-nav .wrapper li:last-child {
     margin-right: 0; }
+  .top-nav .wrapper select {
+    border-style: none;
+    background: #f5f3f4; }
 
 .banner {
   display: -webkit-box;
@@ -260,6 +256,13 @@ header {
   display: inline-block;
   margin-left: 25px; }
 
+.banner-p {
+  font-size: 18px;
+  color: rgba 0, 0, 0, 0.7;
+  font-weight: 400px;
+  padding: 10px 0;
+  color: rgba(39, 39, 39, 0.7); }
+
 .office-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,13 +273,6 @@ header {
   justify-content: space-between; }
   .office-info .office-info-item img {
     vertical-align: top; }
-
-.banner-p {
-  font-size: 18px;
-  color: rgba 0, 0, 0, 0.7;
-  font-weight: 400px;
-  padding: 10px 0;
-  color: rgba(39, 39, 39, 0.7); }
 
 .free-consult p, .free-consult .hero-banner .wrapper p, .hero-banner .wrapper .free-consult p {
   border: solid 2px #3086fd;
@@ -346,7 +342,7 @@ header {
     border-right: solid thin #fff; }
 
 footer {
-  background: black; }
+  background: #202020; }
 
 .footer-contact-info {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #2f87fd), color-stop(50%, #000));
@@ -372,6 +368,132 @@ footer {
       .footer-contact-info .footer-contact-item .contact-item p {
         color: #fff;
         padding: 20px; }
+
+.footer-content {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .footer-content .footer-items {
+    margin: 10px;
+    width: 30%; }
+    .footer-content .footer-items p {
+      color: #b1afaf;
+      width: 100%;
+      line-height: 32px; }
+    .footer-content .footer-items .footer-logo {
+      padding-bottom: 20px; }
+    .footer-content .footer-items .banner-info {
+      display: inline-block;
+      padding-bottom: 30px; }
+      .footer-content .footer-items .banner-info h4 {
+        color: #fff;
+        padding-bottom: 0; }
+      .footer-content .footer-items .banner-info p {
+        padding: 0; }
+    .footer-content .footer-items h6 {
+      color: #2f87fd;
+      font-size: 15px;
+      font-family: "Source Sans Pro", sans-serif; }
+    .footer-content .footer-items input {
+      background: #313030;
+      border: none;
+      color: #605d5d;
+      padding: 10px 20px; }
+    .footer-content .footer-items form button {
+      background: #2f87fd;
+      border-radius: 20%;
+      color: #fff;
+      padding: 10px 30px;
+      position: relative;
+      left: -15px;
+      border: none;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    .footer-content .footer-items button:hover {
+      -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+      transform: translateX(10px);
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    .footer-content .footer-items h5 {
+      color: #fff;
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 500;
+      margin: 20px 0; }
+    .footer-content .footer-items li {
+      color: #b1afaf;
+      line-height: 40px; }
+
+.footer-items {
+  line-height: 32px; }
+  .footer-items button {
+    background: none;
+    border: none;
+    padding: 0 30px;
+    color: #2f87fd;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .footer-items button i {
+      margin-right: 10px;
+      color: #fff; }
+  .footer-items button:hover {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
+.footer-news-items {
+  width: 90%;
+  margin: 30px 0; }
+  .footer-news-items span {
+    color: #545454;
+    padding-bottom: 50px; }
+
+.recieve-email {
+  padding: 50px 0; }
+
+.social-footer {
+  border-top: solid 1px #545454;
+  padding: 50px; }
+  .social-footer .wrapper {
+    color: #757575;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .social-footer p, .social-footer .hero-banner .wrapper p, .hero-banner .wrapper .social-footer p {
+    margin: 10px; }
+  .social-footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .social-footer ul li {
+      margin: 10px;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    .social-footer ul li:hover {
+      -webkit-transform: scaleY(2) scaleX(2);
+      -ms-transform: scaleY(2) scaleX(2);
+      transform: scaleY(2) scaleX(2);
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      color: #2f87fd; }
 
 body {
   background: #ffffff;
@@ -670,6 +792,15 @@ section {
   justify-content: space-between;
   padding: 50px 0; }
 
+.why-choose-advisory h3::after {
+  content: "";
+  height: 2px;
+  width: 80px;
+  background: #2f87fd;
+  display: block;
+  position: relative;
+  bottom: -20px; }
+
 .why-choose-advisory .article-info {
   width: 55%; }
 
@@ -678,7 +809,7 @@ section {
   font-size: 18px;
   font-weight: 500;
   color: #2f87fd;
-  margin: 0; }
+  margin-top: 50px; }
 
 .why-choose-advisory img {
   vertical-align: top; }
