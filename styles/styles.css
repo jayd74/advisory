@@ -280,6 +280,9 @@ header {
   color: #3086fd;
   text-transform: uppercase; }
 
+.hamburger-nav {
+  display: none; }
+
 .main-nav {
   font-size: 18px;
   color: rgba 0, 0, 0, 0.7;
@@ -330,16 +333,49 @@ header {
 
 .main-nav-icons {
   vertical-align: middle; }
+  .main-nav-icons li:first-child {
+    position: relative; }
   .main-nav-icons li:first-child::after {
     content: "2";
-    height: 5px;
-    width: 5px;
+    text-align: center;
+    width: 10px;
     border-radius: 50%;
-    padding: 5px 10px;
+    padding: 5px 5px;
     font-size: 12px;
-    background: #2d71cd; }
+    background: #2d71cd;
+    position: absolute;
+    bottom: 5px;
+    right: 5px; }
   .main-nav-icons li:nth-child(2) {
     border-right: solid thin #fff; }
+
+@media (max-device-width: 960px) {
+  ul.main-nav-menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    background: #3086fd;
+    padding: 0 10px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+  .hamburger-nav {
+    display: block; }
+    .hamburger-nav i {
+      margin: 20px; }
+  .hamburger-nav:hover + ul.main-nav-menu,
+  .hamburger-nav:focus + ul.main-nav-menu {
+    display: block;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+  .main-nav-icons {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
 
 footer {
   background: #202020; }
@@ -1014,7 +1050,7 @@ section {
     -o-transition: 0.2s;
     transition: 0.2s; }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (max-device-width: 960px) {
   .hero-banner {
     text-align: center;
     margin: 0 auto; }

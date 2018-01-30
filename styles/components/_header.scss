@@ -86,6 +86,9 @@ header {
     text-transform: uppercase;
 }
 // end banner 
+.hamburger-nav {
+    display: none;
+}
 .main-nav {
     @include blue-box;
     @include flexbox;
@@ -105,19 +108,52 @@ header {
 }
 .main-nav-icons{
     vertical-align: middle;
+    li:first-child{
+        position: relative;
+    }
     li:first-child::after {
         content: "2";
-        height: 5px;
-        width: 5px;
+        // height: 5px;
+        text-align: center;
+        width: 10px;
         border-radius: 50%;
-        padding:5px 10px;
+        padding:5px 5px;
         font-size:12px;
         background: #2d71cd;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        
     }
     li:nth-child(2) {
     border-right: solid thin #fff;
     }
 }
 // end main-nav
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media (max-device-width : 960px) {
+
+ul.main-nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: $primary;
+    padding: 0 10px;
+    transition: 0.5s;
 }
+.hamburger-nav {
+    display: block;
+    i {
+        margin: 20px;
+    }
+}
+.hamburger-nav:hover + ul.main-nav-menu,
+.hamburger-nav:focus + ul.main-nav-menu {
+    display: block;
+    transition: 0.5s;
+} 
+.main-nav-icons  {
+    transform: none; 
+} 
+
+
+} //end media query
