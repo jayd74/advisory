@@ -437,8 +437,13 @@ section {
         transition: 0.2s;
     }
 }
-@media (max-device-width : 960px) {
 
+
+@media (max-width : 960px) {
+
+.wrapper {
+    width: 80%;
+}    
 .hero-banner {
     text-align: center;
     margin: 0 auto;
@@ -478,9 +483,54 @@ section {
     h5 {
         margin: 10px;
     }
-    .service-type {
-        justify-content: space-between;
+    .wrapper {
+        flex-wrap: wrap;
+        .service-type {
+            margin: 10px;
+            width: calc(50% - 20px);
         }
+    }
+}
+
+.article-info-wrapper {
+    flex-direction: column-reverse;
+    margin: 10px auto;
+}
+.article-info,
+.article-info-img {
+    margin: 0 auto;
+}
+
+.why-choose-advisory .article-info {
+    width: 80%;
+    .sub-advisory {
+        margin: 20px 0;
+    }
+    p {
+        margin: 20px 0;
+    }
+}
+.why-choose-advisory .advisory-blocks {
+    padding: 0;
+}
+.advisory-blocks {
+    flex-direction: column;  
+    padding: 0px;
+    .advisory-block-items {
+        width: 100%;  
+        margin: 10px;  
+    }
+}
+.stat-line {
+    h5 {   
+        font-size: 16px;
+    }
+    p {
+        font-size: 36px;
+    }
+    .stat-item {
+        padding: 10px;
+    }
 }
 
 } //end media query max-width: 1024

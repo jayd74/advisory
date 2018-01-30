@@ -130,7 +130,7 @@ header {
     }
 }
 // end main-nav
-@media (max-device-width : 960px) {
+@media (max-width : 960px) {
 
 ul.main-nav-menu {
     display: none;
@@ -142,6 +142,7 @@ ul.main-nav-menu {
 }
 .hamburger-nav {
     display: block;
+    position: relative;
     i {
         margin: 20px;
     }
@@ -149,7 +150,9 @@ ul.main-nav-menu {
 .hamburger-nav:hover + ul.main-nav-menu,
 .hamburger-nav:focus + ul.main-nav-menu {
     display: block;
-    transition: 0.5s;
+    position: absolute;
+    top: 375px;
+
 } 
 .main-nav-icons  {
     transform: none; 

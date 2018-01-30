@@ -349,7 +349,7 @@ header {
   .main-nav-icons li:nth-child(2) {
     border-right: solid thin #fff; }
 
-@media (max-device-width: 960px) {
+@media (max-width: 960px) {
   ul.main-nav-menu {
     display: none;
     -webkit-box-orient: vertical;
@@ -363,15 +363,15 @@ header {
     -o-transition: 0.5s;
     transition: 0.5s; }
   .hamburger-nav {
-    display: block; }
+    display: block;
+    position: relative; }
     .hamburger-nav i {
       margin: 20px; }
   .hamburger-nav:hover + ul.main-nav-menu,
   .hamburger-nav:focus + ul.main-nav-menu {
     display: block;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
+    position: absolute;
+    top: 375px; }
   .main-nav-icons {
     -webkit-transform: none;
     -ms-transform: none;
@@ -1050,7 +1050,9 @@ section {
     -o-transition: 0.2s;
     transition: 0.2s; }
 
-@media (max-device-width: 960px) {
+@media (max-width: 960px) {
+  .wrapper {
+    width: 80%; }
   .hero-banner {
     text-align: center;
     margin: 0 auto; }
@@ -1082,7 +1084,41 @@ section {
     padding: 50px 0; }
     .our-services h5 {
       margin: 10px; }
-    .our-services .service-type {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; } }
+    .our-services .wrapper {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .our-services .wrapper .service-type {
+        margin: 10px;
+        width: calc(50% - 20px); }
+  .article-info-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    margin: 10px auto; }
+  .article-info,
+  .article-info-img {
+    margin: 0 auto; }
+  .why-choose-advisory .article-info {
+    width: 80%; }
+    .why-choose-advisory .article-info .sub-advisory {
+      margin: 20px 0; }
+    .why-choose-advisory .article-info p {
+      margin: 20px 0; }
+  .why-choose-advisory .advisory-blocks {
+    padding: 0; }
+  .advisory-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0px; }
+    .advisory-blocks .advisory-block-items {
+      width: 100%;
+      margin: 10px; }
+  .stat-line h5 {
+    font-size: 16px; }
+  .stat-line p, .stat-line .hero-banner .wrapper p, .hero-banner .wrapper .stat-line p {
+    font-size: 36px; }
+  .stat-line .stat-item {
+    padding: 10px; } }
