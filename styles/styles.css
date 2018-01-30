@@ -345,10 +345,10 @@ footer {
   background: #202020; }
 
 .footer-contact-info {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #2f87fd), color-stop(50%, #000));
-  background: -webkit-linear-gradient(top, #2f87fd 50%, #000 50%);
-  background: -o-linear-gradient(top, #2f87fd 50%, #000 50%);
-  background: linear-gradient(180deg, #2f87fd 50%, #000 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #2f87fd), color-stop(50%, #202020));
+  background: -webkit-linear-gradient(top, #2f87fd 50%, #202020 50%);
+  background: -o-linear-gradient(top, #2f87fd 50%, #202020 50%);
+  background: linear-gradient(180deg, #2f87fd 50%, #202020 50%);
   position: relative;
   z-index: 1; }
   .footer-contact-info .footer-contact-item {
@@ -741,7 +741,7 @@ p, .hero-banner .wrapper p {
       background: #fff;
       text-align: center;
       padding: 50px;
-      margin-bottom: 2%; }
+      margin-bottom: 30px; }
       .our-services .wrapper .service-type h5 {
         font-family: "Source Sans Pro", sans-serif;
         margin-top: 30px; }
@@ -979,6 +979,8 @@ section {
   .news-item-wrapper .news-items {
     margin: 20px;
     width: calc((100%/3) - 25px); }
+  .news-item-wrapper img {
+    width: 100%; }
   .news-item-wrapper h5 {
     font-family: "Source Sans Pro", sans-serif;
     text-align: left;
@@ -1011,3 +1013,40 @@ section {
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hero-banner {
+    text-align: center;
+    margin: 0 auto; }
+    .hero-banner h1 {
+      font-size: 50px;
+      margin: 0 auto; }
+    .hero-banner p, .hero-banner .wrapper p {
+      margin: 0 auto; }
+  .nav-arrow-wrapper {
+    width: 20%;
+    margin: 0 auto;
+    bottom: 20px; }
+  .collab {
+    margin-top: 50px;
+    margin-bottom: 0; }
+    .collab .wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .collab .wrapper .article-info,
+      .collab .wrapper .collab-offer {
+        width: 100%;
+        padding: 30px; }
+      .collab .wrapper h3 {
+        font-size: 36px; }
+  .our-services {
+    margin: 50px 0;
+    padding: 50px 0; }
+    .our-services h5 {
+      margin: 10px; }
+    .our-services .service-type {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
