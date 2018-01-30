@@ -350,6 +350,35 @@ header {
     border-right: solid thin #fff; }
 
 @media (max-width: 960px) {
+  .top-nav .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .top-nav .wrapper .top-nav-info {
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      width: 100%;
+      margin: 10px 0; }
+    .top-nav .wrapper ul {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .banner .logo {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center; }
+    .banner .banner-info {
+      margin-left: 15px;
+      text-align: left; }
+    .banner .office-info {
+      width: 100%;
+      margin-top: 20px; }
   ul.main-nav-menu {
     display: none;
     -webkit-box-orient: vertical;
@@ -1076,6 +1105,10 @@ section {
 @media (max-width: 960px) {
   .wrapper {
     width: 80%; }
+  h2 {
+    font-size: 36px; }
+  h5 {
+    font-size: 18px; }
   section {
     padding: 30px; }
   .hero-banner {
@@ -1085,7 +1118,8 @@ section {
       font-size: 50px;
       margin: 0 auto; }
     .hero-banner p, .hero-banner .wrapper p {
-      margin: 0 auto; }
+      margin: 0 auto;
+      line-height: 25px; }
   .nav-arrow-wrapper {
     width: 20%;
     margin: 0 auto;
@@ -1103,7 +1137,10 @@ section {
         width: 100%;
         padding: 30px; }
       .collab .wrapper h3 {
+        line-height: 50px;
         font-size: 36px; }
+  .section-heading p, .section-heading .hero-banner .wrapper p, .hero-banner .wrapper .section-heading p {
+    font-size: 200px; }
   .our-services {
     margin: 50px 0;
     padding: 50px 0; }
@@ -1113,8 +1150,11 @@ section {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
       .our-services .wrapper .service-type {
+        padding: 20px;
         margin: 10px;
         width: calc(50% - 20px); }
+        .our-services .wrapper .service-type p {
+          line-height: 25px; }
   .article-info-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1124,14 +1164,27 @@ section {
   .article-info,
   .article-info-img {
     margin: 0 auto; }
+  .collab .wrapper .article-info p {
+    line-height: 25px;
+    margin: 30px 0; }
+  .collab-offer p, .collab-offer .hero-banner .wrapper p, .hero-banner .wrapper .collab-offer p {
+    line-height: 25px;
+    margin: 10px 0; }
+  .collab-offer button {
+    padding: 0; }
   .why-choose-advisory .article-info {
     width: 80%; }
     .why-choose-advisory .article-info .sub-advisory {
       margin: 20px 0; }
     .why-choose-advisory .article-info p {
+      line-height: 30px;
       margin: 20px 0; }
   .why-choose-advisory .advisory-blocks {
     padding: 0; }
+    .why-choose-advisory .advisory-blocks p {
+      line-height: 0px;
+      margin-top: 0px;
+      padding: 20px; }
   .advisory-blocks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1142,6 +1195,8 @@ section {
       width: 100%;
       margin: 10px;
       text-align: center; }
+  .why-choose-advisory .article-info-wrapper {
+    padding: 0; }
   .stat-line {
     margin: 30px 0; }
     .stat-line h5 {
