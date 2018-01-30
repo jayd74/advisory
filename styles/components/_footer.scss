@@ -70,6 +70,9 @@ footer {
             border: none;
             transition: 0.5s;
         }
+        button {
+            padding: 0;
+        }
         button:hover {
             transform: translateX(10px);
             transition: 0.5s;
@@ -141,4 +144,33 @@ footer {
             color:$primary;
         }
     }
+}
+
+@media (max-width : 960px) {
+
+.footer-contact-info .footer-contact-item .contact-item p{
+    padding: 10px;
+    font-size: 14px;
+}
+.footer-content {
+    flex-wrap: wrap;
+    padding: 50px 0;
+    .footer-items:first-child {
+        width: 100%;
+    }
+    .footer-items {
+        line-height: 25px;
+        h6 {
+            float: left;
+            padding: 20px 0;
+        }
+        input {
+            margin:  20px 0px 20px 40px;
+        }
+        .footer-news-items {
+            margin: 0;
+        }
+    }
+}
+
 }

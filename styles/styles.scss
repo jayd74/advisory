@@ -325,6 +325,7 @@ section {
     width: 100%;
     p {
         width: 70%;
+        line-height: 37px;
     }
     button {
         background: none;
@@ -443,7 +444,11 @@ section {
 
 .wrapper {
     width: 80%;
-}    
+}
+
+section {
+    padding: 30px;
+}
 .hero-banner {
     text-align: center;
     margin: 0 auto;
@@ -518,10 +523,12 @@ section {
     padding: 0px;
     .advisory-block-items {
         width: 100%;  
-        margin: 10px;  
+        margin: 10px;
+        text-align: center;  
     }
 }
 .stat-line {
+    margin: 30px 0;
     h5 {   
         font-size: 16px;
     }
@@ -532,5 +539,63 @@ section {
         padding: 10px;
     }
 }
+.latest-project {
+    padding: 20px 0;
+    margin: 0;
+}
+.section-info {
+    flex-direction: column;
+    margin: 80px 0 20px 0;
+    p {
+        text-align: center;
+        margin: 20px auto;
+        line-height: 25px;
+    }
+}
+
+.staff-section .staff-section-info p{
+        font-size: 14px;
+        line-height: 25px;
+}
+
+.staff-section .staff-section-info p:first-child::after {
+    margin: 25px auto;
+}
+
+.news-item-wrapper {
+    flex-direction: column;
+    .news-items {
+        width: 100%;
+        img {   
+            margin: 10px;
+            width: 40%;
+            float: left;
+        }
+        h5 {
+            margin: 15px;
+            font-size: 18px;
+            font-weight: 500px;
+            line-height: 25px;
+        }
+        p {
+            line-height: 25px;
+        }
+    }
+}
+
+.sponsors .wrapper {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+.sponsors a {
+    width: 40%;
+    margin: 15px 0;
+}
+
+
+
+
 
 } //end media query max-width: 1024
