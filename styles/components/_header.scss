@@ -10,7 +10,8 @@ header {
     @include fontSize(16px);
     padding: 20px;
     border:0;
-        a:hover{
+        a:hover,
+        a:focus{
             border-bottom: solid thin $primary;
             transition: 0.5s;
         }
@@ -102,7 +103,8 @@ header {
         text-transform: uppercase;
         padding: 25px 15px 15px 20px;
     }
-    li:hover {
+    li:hover,
+    li:focus {
         @include blue-box-hover;
     }
 }

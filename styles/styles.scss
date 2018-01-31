@@ -5,6 +5,7 @@
 @import "components/variables";
 @import "components/functions";
 @import "components/footer";
+// import partials
 
 body {
     background: #ffffff;
@@ -13,6 +14,9 @@ body {
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
+}
+section {
+    padding: 100px 0;
 }
 h1 {
     @include serifHeading (71px);
@@ -42,6 +46,8 @@ h5 {
 p {
     @include fontSize(16);
 }
+// initial styles for main elements
+
 .hero-banner {
     background: 
         linear-gradient(rgba(1, 22, 50, 0.45)),
@@ -68,7 +74,8 @@ p {
                 margin: 0 10px;
             }
         }
-        button:hover {
+        button:hover
+        button:focus {
             @include blue-box-hover;
         }
     }
@@ -80,7 +87,8 @@ p {
     position: relative;
     bottom: 400px;
     transition: 0.5s;
-    a:hover {
+    a:hover,
+    a:focus {
         background: $primary;
         border-radius: 50%;
         transition: 0.5s;
@@ -97,6 +105,7 @@ p {
     padding-top: 15px;
     text-align: center; 
 }
+// end hero banner
 .collab {
     background: url('../images/ellipse-left.png') no-repeat;
     margin: 100px 0;
@@ -118,11 +127,11 @@ p {
             padding: 10px;
         }
     }
-    button:hover {
+    button:hover,
+    button:focus {
         @include blue-box-hover;
     }
 }
-
 .collab-offer {
     width: 30%;
     background: $secondary;
@@ -131,7 +140,8 @@ p {
     .offer-heading {
         @include serifHeading (18px);
     }
-    button:hover {
+    button:hover,
+    button:focus {
             transform: translateX(20px);
             transition: 0.5s
         }
@@ -151,6 +161,7 @@ p {
         }  
     } 
 }
+//end collab article
 .our-services {
     background: $secondary url('../images/ellipse-right.png') no-repeat right bottom;
     padding: 100px;
@@ -193,9 +204,7 @@ p {
         }
     }
 }
-section {
-    padding: 100px 0;
-}
+
 .section-heading h5,
 .section-heading h2{
     z-index: 2;
@@ -275,7 +284,8 @@ section {
 .advisory-blocks {
     padding: 70px 0;
 }
-.advisory-block-items:hover {
+.advisory-block-items:hover,
+.advisory-block-items:focus {
     border-left: solid 1px $primary;
     h5{
         color: $primary;
@@ -337,10 +347,11 @@ section {
             margin-right: 10px;
         }  
     } 
-    button:hover {
+    button:hover,
+    button:focus {
             transform: translateX(20px);
             transition: 0.5s
-        }
+    }
 }
 .section-items img{
     margin: 10px;
@@ -386,14 +397,15 @@ section {
     justify-content: space-around;
     width: 100px;
     margin: 50px auto;
-.tictac {
-    background: #347ad8;
-    width: 26px;
-    height: 14px;
-    border-radius: 35%;
-    display: block;
+    .tictac {
+        background: #347ad8;
+        width: 26px;
+        height: 14px;
+        border-radius: 35%;
+        display: block;
     }
-    :hover {
+    :hover,
+    :focus {
         background: #fff;
         transition: 0.5s;
     }
@@ -426,26 +438,25 @@ section {
 .sponsors {
     background: $primary;
     .wrapper {
-    justify-content: space-around;
-    @include flexbox;
+        justify-content: space-around;
+        @include flexbox;
     }
     a {
         width: 100%;
         transition: 0.2s;
     }
-    a:hover {
+    a:hover,
+    a:focus {
         transform: scale(1.2);
         transition: 0.2s;
     }
 }
-
-
+// start media queries for responsive design
 @media (max-width : 940px) {
 
 .wrapper {
     width: 80%;
 }
-
 h2 {
     font-size: 36px;
 }
@@ -455,6 +466,7 @@ h5 {
 section {
     padding: 30px;
 }
+//end main styling for document
 .hero-banner {
     text-align: center;
     margin: 0 auto;
@@ -472,7 +484,7 @@ section {
     margin: 0 auto;
     bottom: 20px;
 }
-
+//end hero banner
 .collab {
     margin-top: 50px;
     margin-bottom: 0;
@@ -492,6 +504,18 @@ section {
 .section-heading {
     font-size: 200px;
 }
+.collab .wrapper .article-info p{
+    line-height: 25px;
+    margin: 30px 0;
+}
+.collab-offer p {
+    line-height: 25px;
+    margin: 10px 0;
+}
+.collab-offer button {
+    padding: 0;
+}
+//end collab
 .our-services {
     margin: 50px 0;
     padding: 50px 0;
@@ -510,7 +534,6 @@ section {
         }
     }
 }
-
 .article-info-wrapper {
     flex-direction: column-reverse;
     margin: 10px auto;
@@ -519,18 +542,6 @@ section {
 .article-info-img {
     margin: 0 auto;
 }
-.collab .wrapper .article-info p{
-    line-height: 25px;
-    margin: 30px 0;
-}
-.collab-offer p {
-    line-height: 25px;
-    margin: 10px 0;
-}
-.collab-offer button {
-    padding: 0;
-}
-
 .why-choose-advisory .article-info {
     width: 80%;
     .sub-advisory {
@@ -586,16 +597,14 @@ section {
         line-height: 25px;
     }
 }
-
 .staff-section .staff-section-info p{
         font-size: 14px;
         line-height: 25px;
 }
-
 .staff-section .staff-section-info p:first-child::after {
     margin: 25px auto;
 }
-
+//end staff section
 .news-item-wrapper {
     flex-direction: column;
     .news-items {
@@ -616,29 +625,24 @@ section {
         }
     }
 }
-
 .sponsors .wrapper {
     flex-wrap: wrap;
     margin: 0 auto;
     text-align: center;
-    }
-
+}
 .sponsors a {
     width: 40%;
     margin: 15px 0;
 }
 } //end media query max-width: 960px;
-
 @media (max-width : 768px) {
-
-.hero-banner h1 {
-    width: 100%;
-    font-size: 50px;
-}
-
 section {
     margin: 20px 0;
     padding: 20px 0;
+}
+.hero-banner h1 {
+    width: 100%;
+    font-size: 50px;
 }
 .our-services {
     margin: 20px 0;
@@ -658,7 +662,6 @@ section {
                 padding: 10px;
             }
         }
-        
     }
 }
 .section-heading {
@@ -675,7 +678,6 @@ section {
         font-size: 100px;
     }
 }
-
 .service-type {
     width: 100%;
 }
@@ -695,12 +697,10 @@ section {
 .article-info-img img {
     width: 100%;
 }
-
 .why-choose-advisory .advisory-blocks p {
     line-height: 20px;
     padding: 0;
 }
-
 .stat-line {
     flex-direction: row;
     flex-wrap: wrap;
@@ -722,7 +722,6 @@ section {
 .section-info {
         margin: 0;
     }
-
 .staff-section .wrapper {
     flex-direction: column;
 }
@@ -745,7 +744,6 @@ section {
     p {
         line-height: 20px; 
     }
-
 }
 } //end media query for 768px;
 
@@ -770,7 +768,6 @@ section {
         line-height: 20px;
     }
 }   
-
 .news-item-wrapper .news-items {
     display: flex;
     flex-direction: column;
@@ -778,9 +775,7 @@ section {
 .latest-news .wrapper .news-item-wrapper .news-items img {
     width: 80%;
 }
-
 .sponsors .wrapper a {
     width: 100%;
 }
-
-}
+} //end media query 480px

@@ -1,7 +1,6 @@
 footer {
    background: #202020;
 }
-
 .footer-contact-info {
     background: linear-gradient(180deg, $primary 50%, #202020 50%);
     position: relative;
@@ -73,7 +72,8 @@ footer {
         button {
             padding: 0;
         }
-        button:hover {
+        button:hover,
+        button:focus {
             transform: translateX(10px);
             transition: 0.5s;
         }
@@ -104,7 +104,8 @@ footer {
             color: #fff;
         }  
     } 
-    button:hover {
+    button:hover,
+    button:focus {
             transform: translateX(20px);
             transition: 0.5s
     }   
@@ -138,7 +139,8 @@ footer {
             margin: 10px;
             transition: 0.5s;
         }
-        li:hover {
+        li:hover,
+        li:focus {
             transform: scaleY(2) scaleX(2);
             transition: 0.5s;
             color:$primary;
@@ -187,15 +189,26 @@ footer {
     flex-direction: column;
 }
 
+.footer-content .footer-items {
+    input {
+        padding: 10px 5px;
+        margin: 2%;
+    }
+    form button {
+        padding: 10px;
+    }
+}  
 } //end media query 768px
 
 @media (max-width : 480px) {
-    footer .footer-content .footer-items form button {
-    padding: 10px;
-} 
+
 .social-footer .wrapper {
         flex-direction: column;
     }
+
+footer button {
+    display: none;
+}    
 }
 
 

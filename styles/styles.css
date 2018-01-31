@@ -189,7 +189,8 @@ header {
   font-weight: 400px;
   padding: 20px;
   border: 0; }
-  .top-nav a:hover {
+  .top-nav a:hover,
+  .top-nav a:focus {
     border-bottom: solid thin #3086fd;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -314,7 +315,8 @@ header {
   .main-nav li {
     text-transform: uppercase;
     padding: 25px 15px 15px 20px; }
-  .main-nav li:hover {
+  .main-nav li:hover,
+  .main-nav li:focus {
     font-size: 18px;
     color: rgba 0, 0, 0, 0.7;
     font-weight: 400px;
@@ -516,7 +518,8 @@ footer {
       transition: 0.5s; }
     .footer-content .footer-items button {
       padding: 0; }
-    .footer-content .footer-items button:hover {
+    .footer-content .footer-items button:hover,
+    .footer-content .footer-items button:focus {
       -webkit-transform: translateX(10px);
       -ms-transform: translateX(10px);
       transform: translateX(10px);
@@ -546,7 +549,8 @@ footer {
     .footer-items button i {
       margin-right: 10px;
       color: #fff; }
-  .footer-items button:hover {
+  .footer-items button:hover,
+  .footer-items button:focus {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
@@ -589,7 +593,8 @@ footer {
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-    .social-footer ul li:hover {
+    .social-footer ul li:hover,
+    .social-footer ul li:focus {
       -webkit-transform: scaleY(2) scaleX(2);
       -ms-transform: scaleY(2) scaleX(2);
       transform: scaleY(2) scaleX(2);
@@ -631,16 +636,21 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .footer-content .footer-items input {
+    padding: 10px 5px;
+    margin: 2%; }
+  .footer-content .footer-items form button {
+    padding: 10px; } }
 
 @media (max-width: 480px) {
-  footer .footer-content .footer-items form button {
-    padding: 10px; }
   .social-footer .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  footer button {
+    display: none; } }
 
 body {
   background: #ffffff;
@@ -649,6 +659,9 @@ body {
 .wrapper {
   max-width: 1170px;
   margin: 0 auto; }
+
+section {
+  padding: 100px 0; }
 
 h1 {
   font-family: "Playfair Display", serif;
@@ -725,7 +738,7 @@ p, .hero-banner .wrapper p {
     margin: 10% 0; }
     .hero-banner button i {
       margin: 0 10px; }
-  .hero-banner button:hover {
+  .hero-banner button:hover button:focus {
     font-size: 18px;
     color: rgba 0, 0, 0, 0.7;
     font-weight: 400px;
@@ -759,7 +772,8 @@ p, .hero-banner .wrapper p {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
-  .nav-arrow-wrapper a:hover {
+  .nav-arrow-wrapper a:hover,
+  .nav-arrow-wrapper a:focus {
     background: #2f87fd;
     border-radius: 50%;
     -webkit-transition: 0.5s;
@@ -807,7 +821,8 @@ p, .hero-banner .wrapper p {
     .article-info button i {
       margin-right: 10px;
       padding: 10px; }
-  .article-info button:hover {
+  .article-info button:hover,
+  .article-info button:focus {
     font-size: 18px;
     color: rgba 0, 0, 0, 0.7;
     font-weight: 400px;
@@ -834,7 +849,8 @@ p, .hero-banner .wrapper p {
     font-size: 18px;
     font-weight: 700;
     padding-bottom: 10px; }
-  .collab-offer button:hover {
+  .collab-offer button:hover,
+  .collab-offer button:focus {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
@@ -897,9 +913,6 @@ p, .hero-banner .wrapper p {
         height: 50px; }
       .our-services .wrapper .service-type p {
         line-height: 34px; }
-
-section {
-  padding: 100px 0; }
 
 .section-heading h5,
 .section-heading h2 {
@@ -983,9 +996,11 @@ section {
 .advisory-blocks {
   padding: 70px 0; }
 
-.advisory-block-items:hover {
+.advisory-block-items:hover,
+.advisory-block-items:focus {
   border-left: solid 1px #2f87fd; }
-  .advisory-block-items:hover h5 {
+  .advisory-block-items:hover h5,
+  .advisory-block-items:focus h5 {
     color: #2f87fd;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -1052,7 +1067,8 @@ section {
     transition: 0.5s; }
     .section-info button i {
       margin-right: 10px; }
-  .section-info button:hover {
+  .section-info button:hover,
+  .section-info button:focus {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
@@ -1112,7 +1128,8 @@ section {
     height: 14px;
     border-radius: 35%;
     display: block; }
-  .tictac-wrapper :hover {
+  .tictac-wrapper :hover,
+  .tictac-wrapper :focus {
     background: #fff;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -1154,7 +1171,8 @@ section {
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s; }
-  .sponsors a:hover {
+  .sponsors a:hover,
+  .sponsors a:focus {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -1201,6 +1219,14 @@ section {
         font-size: 36px; }
   .section-heading {
     font-size: 200px; }
+  .collab .wrapper .article-info p {
+    line-height: 25px;
+    margin: 30px 0; }
+  .collab-offer p, .collab-offer .hero-banner .wrapper p, .hero-banner .wrapper .collab-offer p {
+    line-height: 25px;
+    margin: 10px 0; }
+  .collab-offer button {
+    padding: 0; }
   .our-services {
     margin: 50px 0;
     padding: 50px 0; }
@@ -1224,14 +1250,6 @@ section {
   .article-info,
   .article-info-img {
     margin: 0 auto; }
-  .collab .wrapper .article-info p {
-    line-height: 25px;
-    margin: 30px 0; }
-  .collab-offer p, .collab-offer .hero-banner .wrapper p, .hero-banner .wrapper .collab-offer p {
-    line-height: 25px;
-    margin: 10px 0; }
-  .collab-offer button {
-    padding: 0; }
   .why-choose-advisory .article-info {
     width: 80%; }
     .why-choose-advisory .article-info .sub-advisory {
@@ -1311,12 +1329,12 @@ section {
     margin: 15px 0; } }
 
 @media (max-width: 768px) {
-  .hero-banner h1 {
-    width: 100%;
-    font-size: 50px; }
   section {
     margin: 20px 0;
     padding: 20px 0; }
+  .hero-banner h1 {
+    width: 100%;
+    font-size: 50px; }
   .our-services {
     margin: 20px 0; }
     .our-services .wrapper .service-type {
