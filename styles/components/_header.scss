@@ -220,3 +220,31 @@ ul.main-nav-menu {
 
 } //end media query 768px;
 
+@media (max-width : 480px) {
+
+.top-nav {
+    font-size: 12px;
+    img {
+        display: none;
+    }
+    .wrapper li {
+        margin: 0;
+    }
+}
+
+.banner .office-info a {
+    margin: 0;
+}
+.main-nav li {
+    padding: 10px;
+}
+
+} //end media query 480px;
+
+@media (max-width : 320px) {
+.main-nav li {
+      padding: 5px;
+}
+
+
+}

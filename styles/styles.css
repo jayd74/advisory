@@ -426,6 +426,22 @@ header {
   .main-nav li {
     padding: 10px 20px; } }
 
+@media (max-width: 480px) {
+  .top-nav {
+    font-size: 12px; }
+    .top-nav img {
+      display: none; }
+    .top-nav .wrapper li {
+      margin: 0; }
+  .banner .office-info a {
+    margin: 0; }
+  .main-nav li {
+    padding: 10px; } }
+
+@media (max-width: 320px) {
+  .main-nav li {
+    padding: 5px; } }
+
 footer {
   background: #202020; }
 
@@ -611,7 +627,22 @@ footer {
     .footer-contact-info .footer-contact-item .contact-item {
       margin: 0 auto; }
   .social-footer p, .social-footer .hero-banner .wrapper p, .hero-banner .wrapper .social-footer p {
-    font-size: 12px; } }
+    font-size: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+@media (max-width: 480px) {
+  footer .footer-content .footer-items form button {
+    padding: 10px; } }
+
+@media (max-width: 320px) {
+  .social-footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 body {
   background: #ffffff;
@@ -1363,3 +1394,30 @@ section {
     line-height: 20px; }
   .news-item-wrapper .news-items p {
     line-height: 20px; } }
+
+@media (max-width: 480px) {
+  .hero-banner .wrapper h1 {
+    font-size: 40px; }
+  .collab .wrapper .article-info h3 {
+    line-height: 35px;
+    font-size: 30px; }
+  .collab .wrapper .article-info h5 {
+    margin: 10px 0; }
+  .latest-project p, .latest-project .hero-banner .wrapper p, .hero-banner .wrapper .latest-project p,
+  .latest-news p,
+  .latest-news .hero-banner .wrapper p, .hero-banner .wrapper
+  .latest-news p {
+    font-size: 16px;
+    line-height: 20px; }
+  .news-item-wrapper .news-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .latest-news .wrapper .news-item-wrapper .news-items img {
+    width: 80%; }
+  .sponsors .wrapper a {
+    width: 100%; } }

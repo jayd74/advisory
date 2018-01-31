@@ -747,8 +747,40 @@ section {
     }
 
 }
-
-
-
-
 } //end media query for 768px;
+
+@media (max-width : 480px) {
+    .hero-banner .wrapper h1 {
+    font-size: 40px;
+}
+
+.collab .wrapper .article-info {
+    h3 {
+        line-height: 35px;
+        font-size: 30px;
+    }
+    h5 {
+        margin: 10px 0;
+    }
+}
+.latest-project,
+.latest-news {
+    p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}   
+
+.news-item-wrapper .news-items {
+    display: flex;
+    flex-direction: column;
+}
+.latest-news .wrapper .news-item-wrapper .news-items img {
+    width: 80%;
+}
+
+.sponsors .wrapper a {
+    width: 100%;
+}
+
+}
