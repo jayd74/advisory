@@ -635,9 +635,7 @@ footer {
 
 @media (max-width: 480px) {
   footer .footer-content .footer-items form button {
-    padding: 10px; } }
-
-@media (max-width: 320px) {
+    padding: 10px; }
   .social-footer .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
