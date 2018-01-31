@@ -406,6 +406,26 @@ header {
     -ms-transform: none;
     transform: none; } }
 
+@media (max-width: 768px) {
+  .banner .office-info {
+    width: 100%;
+    margin-top: 20px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; }
+    .banner .office-info .office-info-item {
+      margin: 10px; }
+    .banner .office-info a {
+      margin: 50px auto 0 auto; }
+  .hamburger-nav i {
+    margin: 10px; }
+  .main-nav li {
+    padding: 10px 20px; } }
+
 footer {
   background: #202020; }
 
@@ -581,6 +601,17 @@ footer {
         margin: 20px 0px 20px 40px; }
       .footer-content .footer-items .footer-news-items {
         margin: 0; } }
+
+@media (max-width: 768px) {
+  .footer-contact-info .footer-contact-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .footer-contact-info .footer-contact-item .contact-item {
+      margin: 0 auto; }
+  .social-footer p, .social-footer .hero-banner .wrapper p, .hero-banner .wrapper .social-footer p {
+    font-size: 12px; } }
 
 body {
   background: #ffffff;
@@ -1102,7 +1133,7 @@ section {
     -o-transition: 0.2s;
     transition: 0.2s; }
 
-@media (max-width: 960px) {
+@media (max-width: 940px) {
   .wrapper {
     width: 80%; }
   h2 {
@@ -1139,7 +1170,7 @@ section {
       .collab .wrapper h3 {
         line-height: 50px;
         font-size: 36px; }
-  .section-heading p, .section-heading .hero-banner .wrapper p, .hero-banner .wrapper .section-heading p {
+  .section-heading {
     font-size: 200px; }
   .our-services {
     margin: 50px 0;
@@ -1249,3 +1280,86 @@ section {
   .sponsors a {
     width: 40%;
     margin: 15px 0; } }
+
+@media (max-width: 768px) {
+  .hero-banner h1 {
+    width: 100%;
+    font-size: 50px; }
+  section {
+    margin: 20px 0;
+    padding: 20px 0; }
+  .our-services {
+    margin: 20px 0; }
+    .our-services .wrapper .service-type {
+      width: 100%;
+      padding: 10px; }
+      .our-services .wrapper .service-type h5 {
+        margin: 0; }
+      .our-services .wrapper .service-type img {
+        margin: 15px; }
+      .our-services .wrapper .service-type p {
+        line-height: 20px;
+        font-size: 14px;
+        padding: 10px; }
+  .section-heading h2 {
+    font-size: 25px; }
+  .section-heading h2::after {
+    margin: 30px auto; }
+  .section-heading h5 {
+    font-size: 14px; }
+  .section-heading p, .section-heading .hero-banner .wrapper p, .hero-banner .wrapper .section-heading p {
+    font-size: 100px; }
+  .service-type {
+    width: 100%; }
+  .why-choose-advisory .article-info {
+    width: 100%; }
+    .why-choose-advisory .article-info h3 {
+      font-size: 30px; }
+    .why-choose-advisory .article-info h3:after {
+      bottom: 0; }
+    .why-choose-advisory .article-info p {
+      font-size: 16px;
+      line-height: 25px; }
+  .article-info-img img {
+    width: 100%; }
+  .why-choose-advisory .advisory-blocks p {
+    line-height: 20px;
+    padding: 0; }
+  .stat-line {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 10px 0; }
+    .stat-line .stat-item {
+      width: 50%;
+      text-align: center;
+      border-bottom: 1px solid #313f51;
+      padding: 20px; }
+      .stat-line .stat-item h5 {
+        margin: 10px; }
+  .latest-project h5,
+  .latest-news h5 {
+    margin: 0; }
+  .section-info {
+    margin: 0; }
+  .staff-section .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .staff-img {
+    width: 50%;
+    margin: 0 auto; }
+  .staff-section .staff-section-info {
+    width: 100%; }
+    .staff-section .staff-section-info p {
+      font-size: 16px; }
+  .news-item-wrapper .news-items h5 {
+    margin: 5px;
+    font-size: 16px;
+    line-height: 20px; }
+  .news-item-wrapper .news-items p {
+    line-height: 20px; } }

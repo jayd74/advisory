@@ -174,3 +174,16 @@ footer {
 }
 
 }
+
+@media (max-width : 768px ) {
+.footer-contact-info .footer-contact-item {
+    flex-direction: column;
+        .contact-item {
+            margin: 0 auto;
+        }
+}
+.social-footer p {
+    font-size: 12px;
+}
+
+} //end media query 768px
